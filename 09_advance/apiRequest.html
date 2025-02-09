@@ -1,0 +1,45 @@
+<!-- XML HTTP Request-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML HTTP REQUEST</title>
+</head>
+<body style="background-color: #414141; color: #fff;">
+    <h2>Get Image and Followers count</h2>
+    <div>
+        <img src="" alt="" id="image" class="image"/>
+        <p>Followers: <span id="followers"></span></p>
+    </div>
+    
+</body>
+<script>
+    const requestUrl = 'http://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            const data = JSON.parse(this.responseText);
+            const avatarUrl = data.avatar_url;
+            const followerCount = data.followers;
+
+
+            const getImg = document.getElementById('image')
+            getImg.src = avatarUrl;
+
+            const followers = document.getElementById('followers')
+            followers.textContent = followerCount;
+
+            console.log(data.followers);
+            console.log(data.avatar_url);
+        }
+    }
+    xhr.send();
+
+
+    
+</script>
+</html>

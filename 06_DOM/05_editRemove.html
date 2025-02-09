@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Edit Romove</title>
+</head>
+<body style="background-color: black; color: #ccc;">
+
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+    
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("Python")
+    addLanguage("TypeScript ")
+
+
+    // function addOptiLanguage(langName){
+
+    //     const li = document.createElement('li');
+    //     li.appendChild(document.createTextNode(langName))
+
+    //     document.querySelector('.language').appendChild(li)
+
+
+    //     // const addText = document.createTextNode(langName)
+    //     // li.appendChild(addText)
+    // }
+
+    // addOptiLanguage('goLang')
+
+
+
+    // function addOptimizedLang(langName){
+
+    //     const li = document.createElement('li');
+
+    //     li.appendChild(document.createTextNode(langName))
+    //     document.querySelector('.language').appendChild(li)
+
+    // }
+    // addOptimizedLang('Python')
+
+
+
+    // edit
+
+//    const listName = document.querySelector('li:nth-child(3)')
+
+// //    listName.innerHTML = "JavaScript"
+
+//    const newListName = document.createElement('li')
+
+//    newListName.textContent = "JavaScript"
+
+//    listName.replaceWith(newListName)
+
+
+ 
+    // edit
+
+    // const secondLang = document.querySelector('li:nth-child(2)')
+    // secondLang.outerHTML = '<li>TypeScript</li>'
+
+
+
+
+    // remove
+
+
+    // const lastLang = document.querySelector('li:last-child')
+    // lastLang.remove()
+
+    
+    // const firstLang = document.querySelector('li:first-child')
+    // lastLang.remove()
+
+
+
+
+    </script>   
+</html>
