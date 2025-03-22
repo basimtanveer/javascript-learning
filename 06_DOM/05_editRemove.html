@@ -14,15 +14,24 @@
     
 </body>
 <script>
+
     function addLanguage(langName){
-        const li = document.createElement('li');
+        const li = document.createElement('li')
         li.innerHTML = `${langName}`
         document.querySelector('.language').appendChild(li)
     }
+    addLanguage("python")
+    addLanguage("java")
+    addLanguage("TypeScript")
 
-    addLanguage("Python")
-    addLanguage("TypeScript ")
 
+    function addOptiLangugage(langName){
+
+       const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLangugage('golang')
 
     // function addOptiLanguage(langName){
 
@@ -54,22 +63,22 @@
 
     // edit
 
-//    const listName = document.querySelector('li:nth-child(3)')
+   const listName = document.querySelector('li:nth-child(3)')
 
-// //    listName.innerHTML = "JavaScript"
+//    listName.innerHTML = "JavaScript"
 
-//    const newListName = document.createElement('li')
+   const newListName = document.createElement('li')
 
-//    newListName.textContent = "JavaScript"
+   newListName.textContent = "JavaScript"
 
-//    listName.replaceWith(newListName)
+   listName.replaceWith(newListName)
 
 
  
     // edit
 
-    // const secondLang = document.querySelector('li:nth-child(2)')
-    // secondLang.outerHTML = '<li>TypeScript</li>'
+    const secondLang = document.querySelector('li:nth-child(2)')
+    secondLang.outerHTML = '<li>TypeScript</li>'
 
 
 
@@ -77,12 +86,12 @@
     // remove
 
 
-    // const lastLang = document.querySelector('li:last-child')
-    // lastLang.remove()
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
 
     
-    // const firstLang = document.querySelector('li:first-child')
-    // lastLang.remove()
+    const firstLang = document.querySelector('li:first-child')
+    lastLang.remove()
 
 
 

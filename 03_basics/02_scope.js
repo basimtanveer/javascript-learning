@@ -7,18 +7,44 @@ if(true){
 // console.log(a);
 
 
+
+
+
+
+
+
 function one(){
     const username = "basim"
+     
 
-    function two() {
-        const website = "youtube"
-        // console.log(username);
-        
-    }
+    function two(){
+        const website = " Youtube "
+        // console.log(username);        
+    } 
     // console.log(website);
+
     two()
 }
 one()
+
+
+
+if (true) {
+    const username = "Basim"
+
+    if (username === "Basim") {
+        const website = "youtube"
+        console.log(username + website);
+    }
+
+    // console.log(website);
+}
+
+// console.log(username);
+
+
+
+
 
 
 if (true) {
@@ -38,15 +64,15 @@ addOne()
 function addOne(num){
     return num + 1
 }
-console.log(addOne(5));
+// console.log(addOne(5));
 
 
 
-// addTwo()
+addTwo()
 const addTwo = function(num){
     return num + 2
 }
-console.log(addTwo(5));
+// console.log(addTwo(5));
 
 
 

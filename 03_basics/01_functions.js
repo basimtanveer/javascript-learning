@@ -1,16 +1,17 @@
 function sayMyName(){
     console.log("B");
-    console.log("B");
-    console.log("B");
-    console.log("B");
-    console.log("B");
+    console.log("A");
+    console.log("s");
+    console.log("I");
+    console.log("M");
 }
 
 // sayMyName()
 
-// function addTwoNumbers(number1, number2){
-//     console.log(number1 + number2);
-// }
+function addTwoNumbers(number1, number2){
+    console.log(number1 + number2);
+}
+
 
 function addTwoNumbers(number1, number2){
 
@@ -63,7 +64,7 @@ const user = {
     prices: 999
 }
 function handleObject(anyobject){
-    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+    // console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 // handleObject(user)
 handleObject({
@@ -78,8 +79,8 @@ function mySecondValue(getArray){
     return getArray[1]
 }
 
-console.log(mySecondValue(newArray))
-console.log(mySecondValue([100, 200, 500, 400, 600]))
+// console.log(mySecondValue(newArray))
+// console.log(mySecondValue([100, 200, 500, 400, 600]))
 
 
 

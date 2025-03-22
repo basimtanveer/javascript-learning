@@ -1,8 +1,7 @@
 //singleton
-Object.create
+// Object.create
 
 // Object Literals
-
 const mySym = Symbol("key1")
 
 const JsUser = {
@@ -30,10 +29,12 @@ JsUser.email = "BASIM@MICROSOFT.com"
 
 
 JsUser.greeting = function(){
-    console.log("Hello JS User");
+    // console.log("Hello JS User");
 }
+
+
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS User, ${this.name}`);
+    console.log(`Hello JS User, ${this.name}. Your Age is ${this.age}`);
 }
 console.log(JsUser.greeting());
 console.log(JsUser.greetingTwo());

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Text</title>
+</head>
+<body>
+
+    <h2>Reverse Your Text</h2>
+    <input type="text" id="textInput" placeholder="Enter text here">
+    <button onclick="reverseText()">Reverse</button>
+
+    <h3>Reversed Text: <span id="output"></span></h3>
+
+    <script>
+        function reverseText() {
+            const input = document.getElementById("textInput").value;
+            const reversed = input.split('').reverse().join('');
+            document.getElementById("output").innerText = reversed;
+        }
+    </script>
+
+</body>
+</html>
