@@ -1,16 +1,18 @@
 // call
 
 
-function SetUsername(username){
-    this.username = username
-    console.log("CALLED");
+function setUserName(username){
+    this.username =  username
+    console.log("called");
+    
 }
 
-function createUser(username, email, password){
-    SetUsername.call(this, username)  
-    this.email = email
+function createUser (username, email, password){
+    setUserName.call(this, username) 
+    this.email = email;
     this.password = password
 }
 
-const chai = new createUser("chai", "chai@user.com", "123")
+const chai = new createUser("chai", "chai@gmail.com", "1234")
+
 console.log(chai);

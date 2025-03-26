@@ -17,11 +17,12 @@ let heroPower = {
 }
 
 Object.prototype.basim = function(){
-    console.log(`basim is present in all objects`);
+    // console.log(`basim is present in all objects`);
+    
 }
 
 Array.prototype.heyBasim = function(){
-    console.log(`basim say Hello`);
+    // console.log(`basim say Hello`);
 }
 
 // heroPower.basim()
@@ -52,7 +53,7 @@ const TaSupport = {
 Teacher.__proto__ = user
 
 
-// modern syntax
+// // modern syntax
 
 Object.setPrototypeOf(TeachingSupport, Teacher)
 
@@ -61,7 +62,7 @@ let anotherUsername = "ChaiOrCode     "
 
 String.prototype.trueLength = function(){
     console.log(`${this}`);
-    console.log(`True length is: ${this.trim().length}`);
+    console.log(` True length is: ${this.trim().length}`);    
 }
 
 anotherUsername.trueLength()
